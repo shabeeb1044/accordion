@@ -96,9 +96,8 @@ main .faq-box  .accordion .accordion-body p{
 }
 
 
-
 .accordion-button::after {
-    background-image: url("/assets/img/icon-plus.svg");
+    background-image:url(../assets/img/icon-plus.svg) !important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -107,7 +106,7 @@ main .faq-box  .accordion .accordion-body p{
 
 @media screen and (max-width:600px){
     main .banner{
-        background: url(../assets/img/icon-plus.svg) !important;
+        background: url(../assets/img/background-pattern-mobile.svg) !important;
         width: 100%;
     }
 
