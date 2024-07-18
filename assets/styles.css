@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(fonts/WorkSans-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+:root {
+    -White: hsl(0, 0%, 100%);
+    -Light_pink: hsl(275, 100%, 97%);
+    -Grayish_purple: hsl(292, 16%, 49%);
+    -dark_purple: hsl(292, 42%, 14%);
+}
+
+body{
+    /* background:var(-dark_purple); */
+    background-color: hsl(275, 100%, 97%);
+}
+
+.continer{
+}
+main .banner{
+    background: url(img/background-pattern-desktop.svg) !important;
+    height: 270px;
+    width: 100%;
+}
+
+main .faq-box{
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -135px;
+}
+
+main .faq-box .headeing h1{
+    font-weight: 700;
+}
+
+
+main .faq-box  .accordion h6{
+font-weight: 700;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.734);
+}
+main .faq-box  .accordion .accordion-item{
+    border: none;
+    border-bottom: 1px solid rgb(255, 240, 240);
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    border: none;
+    background-color: unset;    
+}
+
+/* Custom CSS to remove borders from accordion */
+.accordion-button {
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+.accordion-header {
+    border: none;
+}
+
+.accordion-collapse {
+    border: none;
+}
+
+
+.no-border.accordion-button:not(.collapsed) {
+    border: none;
+}
+
+ 
+main .faq-box  .accordion .accordion-body{
+    border: none;
+}
+
+  
+ 
+main .faq-box  .accordion .accordion-body p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+.accordion-button::after {
+    background-image: url("/assets/img/icon-plus.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("/assets/img/icon-minus.svg");
+}
+
+@media screen and (max-width:600px){
+    main .banner{
+        background: url(img/background-pattern-mobile.svg) !important;
+        width: 100%;
+    }
+
+}
