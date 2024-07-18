@@ -102,12 +102,12 @@ main .faq-box  .accordion .accordion-body p{
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("/assets/img/icon-minus.svg");
+    background-image: url(../assets/img/icon-minus.svg) !important;
 }
 
 @media screen and (max-width:600px){
     main .banner{
-        background: url(img/background-pattern-mobile.svg) !important;
+        background: url(../assets/img/icon-plus.svg) !important;
         width: 100%;
     }
 
